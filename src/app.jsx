@@ -1,15 +1,5 @@
-import ReactDOM from 'react-dom/client'
+const tech = "React, Tailwind and Vite";
 
-const cpTheme = {
-    primary: 'white',
-    secondary: 'black'
+export function App() {
+    return <h1 className="font-mono text-4xl">Hello {tech}!</h1>;
 }
-
-function App() {
-    return <h1 className="font-mono text-4xl">Hello React and Vite!</h1>
-}
-
-const app = document.getElementById('app')
-const root = ReactDOM.createRoot(app)
-
-root.render(<App />)
